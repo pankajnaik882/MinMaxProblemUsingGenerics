@@ -8,7 +8,7 @@ namespace MaxMIn
 {
     public class MaxMin
     {
-        public static int MaximumIntNum(int fNumber, int sNumber, int thirdNumber)
+        public static double MaximumIntNum(double fNumber,double sNumber, double thirdNumber)
         {
             if ((fNumber.CompareTo(sNumber) > 0 && fNumber.CompareTo(thirdNumber) > 0) ||
                 (fNumber.CompareTo(sNumber) >= 0 && fNumber.CompareTo(thirdNumber) > 0) ||
