@@ -4,7 +4,7 @@
     {
         public static void Main(string[] args)
         {
-            int max = MaxMin.MaximumIntNum(30, 20, 10); 
+            double max = MaxMin.MaximumIntNum(1.2,2.5,3.8); 
             Console.WriteLine("{0} Greatest than Two ",max);
         }
     }
