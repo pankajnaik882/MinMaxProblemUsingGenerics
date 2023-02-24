@@ -6,10 +6,17 @@ using System.Threading.Tasks;
 
 namespace MaxMIn
 {
-    public class MaxMin
+    public class MaxMin<T> where T : IComparable
     {
-   
-        public static int MaximumIntNum(int fNumber, int sNumber, int thirdNumber)
+        public T fNumber,sNumber,thirdNumber;
+        
+        public MaxMin(T fNumber,T sNumber, T thirdNumber) 
+        {
+            this.fNumber = fNumber;
+            this.sNumber = sNumber;
+            this.thirdNumber = thirdNumber;
+        }
+        public static T Maximum(T fNumber, T sNumber, T thirdNumber)
         {
             if ((fNumber.CompareTo(sNumber) > 0 && fNumber.CompareTo(thirdNumber) > 0) ||
                 (fNumber.CompareTo(sNumber) >= 0 && fNumber.CompareTo(thirdNumber) > 0) ||
@@ -32,10 +39,10 @@ namespace MaxMIn
             {
                 return thirdNumber;
             }
-            return fNumber;
+           return fNumber;
         }
 
-        public static string MaximumIntNum(string first, string second, string third)
+     /*   public static string MaximumIntNum(string first, string second, string third)
         {
             if(first.Length > second.Length && first.Length > third.Length)
             {
@@ -53,8 +60,12 @@ namespace MaxMIn
             {
                 return "Every string is same";
             }
-        }
-
-
+        } */
+        
+        //public T maxvalue()
+        //{
+        //    T max = MaxMin<T>.Maximum(this.fNumber,this.sNumber,this.thirdNumber);
+        //    return max;
+        //}
     }
 }
