@@ -42,30 +42,30 @@ namespace MaxMIn
            return fNumber;
         }
 
-     /*   public static string MaximumIntNum(string first, string second, string third)
+        /*   public static string MaximumIntNum(string first, string second, string third)
+           {
+               if(first.Length > second.Length && first.Length > third.Length)
+               {
+                   return "First is Greatest";
+               }
+               else if (second.Length > second.Length && second.Length > third.Length)
+               {
+                   return "Second is Greatest";
+               }
+               else if (third.Length > first.Length && third.Length > second.Length)
+               {
+                   return "Third is Greatest";
+               }
+               else
+               {
+                   return "Every string is same";
+               }
+           } */
+
+        public T maxvalue()
         {
-            if(first.Length > second.Length && first.Length > third.Length)
-            {
-                return "First is Greatest";
-            }
-            else if (second.Length > second.Length && second.Length > third.Length)
-            {
-                return "Second is Greatest";
-            }
-            else if (third.Length > first.Length && third.Length > second.Length)
-            {
-                return "Third is Greatest";
-            }
-            else
-            {
-                return "Every string is same";
-            }
-        } */
-        
-        //public T maxvalue()
-        //{
-        //    T max = MaxMin<T>.Maximum(this.fNumber,this.sNumber,this.thirdNumber);
-        //    return max;
-        //}
+            T max = MaxMin<T>.Maximum(this.fNumber, this.sNumber, this.thirdNumber);
+            return max;
+        }
     }
 }
